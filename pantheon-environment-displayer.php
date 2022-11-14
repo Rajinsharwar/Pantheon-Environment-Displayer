@@ -8,6 +8,10 @@
  * Text Domain: pantheon-environment-displayer
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 add_action('wp_before_admin_bar_render', "pantheon_environment_displayer");
 
 function pantheon_environment_displayer(){
