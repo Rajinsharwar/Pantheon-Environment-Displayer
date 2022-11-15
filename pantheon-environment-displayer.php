@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Pantheon Environment Displayer
+ * Plugin Name: Environment Displayer for Pantheon
  * Description: A super light-weight WordPress plugin to display the current Pantheon's environment in the ADMIN Toolbar of WordPress. Avoid conflicts while working on various envionment, and always besure that you are working on the correct branch. No configurations needed. Just activate it, and your admin panel will display the current environment.
  * Author: Rajin Sharwar
  * Author URI: https://linkedin.com/in/rajinsharwar
