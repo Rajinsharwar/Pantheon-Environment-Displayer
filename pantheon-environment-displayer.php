@@ -8,6 +8,7 @@
  * Text Domain: pantheon-environment-displayer
  */
 
+
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
@@ -16,7 +17,7 @@ add_action('wp_before_admin_bar_render', "pantheon_environment_displayer");
 
 function pantheon_environment_displayer(){
 	global $wp_admin_bar;
-	$pantheon_env = strtoupper($_ENV['PANTHEON_ENVIRONMENT']);
+	$pantheon_env = sanitize_text_field(strtoupper($_ENV['PANTHEON_ENVIRONMENT']));
 	if (empty($pantheon_env)) {
 			$non_pantheon_args = array (
 			'id' => 'pantheon-environment-displayer',
